@@ -1,0 +1,22 @@
+//first DFA accepts string of even length
+// start state:q0 accept states:q0
+a b
+q0 q1 q1
+q1 q0 q0
+
+//second DFA accepts strings with substring ab
+// start state:r0 accept states:r2
+a b
+r0 r1 r0
+r1 r1 r2
+r2 r2 r2
+
+//intersected DFA accepts string of even length with substring ab
+//start state:q0,r0 accept states: q0,r2
+a b
+q0,r0 q1,r1 q1,r0
+q0,r1 q1,r1 q1,r2
+q0,r2 q1,r2 q1,r2
+q1,r0 q0,r1 q0,r0
+q1,r1 q0,r1 q0,r2
+q1,r2 q0,r2 q0,r2

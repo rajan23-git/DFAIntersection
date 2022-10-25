@@ -1,0 +1,20 @@
+//first DFA accepts strings that start in 'a'
+//start state:q0 accept states:q1
+a b
+q0 q1 q2
+q1 q1 q1
+q2 q2 q2
+//second DFA accepts strings that end in 'b'
+//start state:r0 accept states:r1
+a b
+r0 r0 r1
+r1 r0 r1
+//intersected DFA accepts strings that start in 'a' and end in 'b'
+//start state:q0,r0 accept states:q1,r1
+a b
+q0,r0 q1,r0 q2,q1
+q0,r1 q1,r0 q2,r1
+q1,r0 q1,r0 q1,r1
+q1,r1 q1,r0 q1,r1
+q2,r0 q2,r0 q2,r1
+q2,r1 q2,r0 q2,r1

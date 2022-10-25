@@ -1,0 +1,7 @@
+a b 
+q0,r0 q1,r1 q1,r2 
+q0,r1 q1,r1 q1,r1 
+q0,r2 q1,r2 q1,r2 
+q1,r0 q0,r1 q0,r2 
+q1,r1 q0,r1 q0,r1 
+q1,r2 q0,r2 q0,r2 

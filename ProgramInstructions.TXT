@@ -1,0 +1,27 @@
+
+PROJECT TITLE: Calculating DFA intersection given two base DFAs
+
+
+PURPOSE OF PROJECT:
+the purpose of this project is to read in the transition tables from two separate DFA text files.
+Using the information read, the program constructs the intersection of the DFA
+by constructing the transition table that pertains to the intersection,
+and then printing out that transition table to a destination text file.
+
+
+VERSION or DATE: November 20, 2021
+
+
+HOW TO START THIS PROJECT AND USER INSTRUCTIONS: 
+to modify the two input text files, directly edit them on bluejay.
+To run this program right click on Main class square. A drop down menu appears
+giving you options such as: new Main() and void main(String[] args). Click the 
+option called "void main(String [] args)". This begins the program.On program
+entry the user is prompted for the accept states and the start state of the first DFA. Type these in.
+The user is then prompted for the accept states and start state of the second DFA.Type these in.
+The program then runs to completion.The accept states and start state of the intersection DFA 
+are printed to the console. To view the transition table of the intersected DFA
+open up DFA_Intersected.txt.
+
+
+AUTHORS: Pranav Rajan

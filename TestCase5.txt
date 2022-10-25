@@ -1,0 +1,17 @@
+//first DFA accepts strings that end in 'a'
+//start state:q0 accept states:q1
+a b
+q0 q1 q0
+q1 q1 q0
+//second DFA accepts strings that end in 'b'
+//start state:r0 accept states:r1
+a b
+r0 r0 r1
+r1 r0 r1
+//intersected DFA accepts empty set of strings
+//start state:q0,r0 accept state:q1,r1 (unreachable)
+a b
+q0,r0 q1,r0 q0,r1
+q0,r1 q1,r0 q0,r1
+q1,r0 q1,r0 q0,r1
+q1,r1 q1,r0 q0,r1
